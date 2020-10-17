@@ -1,0 +1,10 @@
+{
+  "proxy": {
+    "/my-project/geo-map": {
+      "target": "http://localhost:8080",
+      "pathRewrite": {
+        "^/my-project": ""
+      }
+    }
+  }
+}
