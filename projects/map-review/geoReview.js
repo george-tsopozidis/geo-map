@@ -20,7 +20,7 @@ export default class GeoReview {
   }
 
   async callApi(method, body = {}) {
-    const res = await fetch(`/geo-map/${method}`, {
+    const res = await fetch(`/map-review/${method}`, {
       method: 'post',
       body: JSON.stringify(body),
     });
@@ -38,11 +38,11 @@ export default class GeoReview {
       const div = document.createElement('div');
       div.classList.add('review-item');
       div.innerHTML = `
-      <div>
-        <b>${item.name}</b> [${item.place}]
-      </div>
-      <div>${item.text}</div>
-      `;
+    <div>
+      <b>${item.name}</b> [${item.place}]
+    </div>
+    <div>${item.text}</div>
+    `;
       reviewList.appendChild(div);
     }
 

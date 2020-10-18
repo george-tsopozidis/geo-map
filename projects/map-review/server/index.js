@@ -1,5 +1,4 @@
 const http = require('http');
-const { resolve } = require('path');
 const Storage = require('./storage');
 
 createServer();
@@ -47,7 +46,7 @@ function createServer() {
           end(res, {});
         }
       } catch (e) {
-        end(res,  error, { message: e.message }, 500);
+        end(res, { error: { message: e.message } }, 500);
       }
     })
     .listen(8181);

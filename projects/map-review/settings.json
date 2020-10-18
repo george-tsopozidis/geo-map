@@ -1,0 +1,22 @@
+{
+  "proxy": {
+    "/map-review/list": {
+      "target": "http://localhost:8080",
+      "pathRewrite": {
+        "^/map-review": ""
+      }
+    },
+    "/map-review/add": {
+      "target": "http://localhost:8080",
+      "pathRewrite": {
+        "^/map-review": ""
+      }
+    },
+    "/map-review/coords": {
+      "target": "http://localhost:8080",
+      "pathRewrite": {
+        "^/map-review": ""
+      }
+    }
+  }
+}

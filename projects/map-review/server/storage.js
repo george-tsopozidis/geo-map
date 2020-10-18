@@ -46,11 +46,12 @@ class Storage {
         total: this.data[item].length,
       });
     }
+
     return coords;
   }
 
   getByCoords(coords) {
-    this.validateReview(coords);
+    this.validateCoords(coords);
     const index = this.getIndex(coords);
     return this.data[index] || [];
   }
