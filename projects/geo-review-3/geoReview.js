@@ -20,7 +20,7 @@ export default class GeoReview {
   }
 
   async callApi(method, body = {}) {
-    const res = await fetch(`/map-review/${method}`, {
+    const res = await fetch(`/geo-review-3/${method}`, {
       method: 'post',
       body: JSON.stringify(body),
     });
